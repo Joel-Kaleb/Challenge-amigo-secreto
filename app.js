@@ -3,7 +3,23 @@ const amigos = [];
 
 function agregarAmigo()
 {
-    return;
+    let amigo = document.querySelector("#amigo").value;
+    if(amigo == '')
+    {
+        alert("Por favor, inserta un nombre");
+        limpiarCajaTexto();
+    }
+    else
+    {
+        console.log(amigo);
+        limpiarCajaTexto();
+    }
+    
+}
+
+function limpiarCajaTexto()
+{
+    document.querySelector("#amigo").value = '';
 }
 
 function sortearAmigo()
