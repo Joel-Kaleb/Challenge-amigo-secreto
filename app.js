@@ -4,14 +4,15 @@ const amigos = [];
 function agregarAmigo()
 {
     let amigo = document.querySelector("#amigo").value;
-    if(amigo == '')
+    
+    if(amigo.trim() === '') //trim remueve espacios al principio y final de un string
     {
         alert("Por favor, inserta un nombre");
         limpiarCajaTexto();
     }
     else
     {
-        console.log(amigo);
+        amigos.push(amigo);
         limpiarCajaTexto();
     }
     
