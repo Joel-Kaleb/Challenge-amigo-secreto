@@ -75,10 +75,6 @@ cd amigo-secreto
 4. Presiona "Sortear amigo"
 5. El sistema mostrará: "El amigo secreto sorteado es: Carlos"
 
-## 🎨 Capturas de Pantalla
-
-*(Aquí podrías agregar imágenes de tu aplicación funcionando)*
-
 ## 🔧 Funciones Principales
 
 ### `agregarAmigo()`
@@ -109,7 +105,7 @@ Este proyecto me ayudó a practicar:
 
 ## 👨‍💻 Autor
 
-**[Joel Kaleb Moreno Valenzuela]**
+**Joel Kaleb Moreno Valenzuela**
 - GitHub: [@Joel-Kaleb](https://github.com/Joel-Kaleb)
 - Email: joelkalebmoreno@gmail.com
 
