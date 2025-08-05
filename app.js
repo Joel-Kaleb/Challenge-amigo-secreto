@@ -9,18 +9,29 @@ function agregarAmigo()
     {
         alert("Por favor, inserta un nombre");
         limpiarCajaTexto();
+        return;
     }
-    else
-    {
-        amigos.push(amigo);
-        limpiarCajaTexto();
-    }
-    
+
+    amigos.push(amigo);
+    limpiarCajaTexto();
+    agregarAmigoLista();
 }
 
 function limpiarCajaTexto()
 {
     document.querySelector("#amigo").value = '';
+}
+
+function agregarAmigoLista()
+{
+    let lista = document.querySelector("#listaAmigos");
+    let contenidoHTML = "";
+    for(let i = 0; i < amigos.length; i++)
+    {
+        contenidoHTML += `<li>${amigos[i]}</li>`;
+    }
+
+    lista.innerHTML = contenidoHTML;
 }
 
 function sortearAmigo()
